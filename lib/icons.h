@@ -30,35 +30,35 @@ extern const unsigned char bignetdrive[];
 
 extern const unsigned char bignethood[];
 
-extern const unsigned char bookset[];
+extern const unsigned char bookadd[];
 
 extern const unsigned char bookclr[];
 
-extern const unsigned char bookadd[];
-
 extern const unsigned char bookdel[];
+
+extern const unsigned char bookset[];
 
 extern const unsigned char clearentry[];
 
 extern const unsigned char cmymode[];
 
+extern const unsigned char deleteicon[];
+
 extern const unsigned char dialmode[];
 
 extern const unsigned char dirupicon[];
 
-extern const unsigned char deleteicon[];
-
-extern const unsigned char docktop[];
-
 extern const unsigned char dockbottom[];
+
+extern const unsigned char dockflip[];
+
+extern const unsigned char dockfree[];
 
 extern const unsigned char dockleft[];
 
 extern const unsigned char dockright[];
 
-extern const unsigned char dockfree[];
-
-extern const unsigned char dockflip[];
+extern const unsigned char docktop[];
 
 extern const unsigned char entericon[];
 
@@ -66,21 +66,21 @@ extern const unsigned char erroricon[];
 
 extern const unsigned char eyedrop[];
 
-extern const unsigned char filecancel[];
-
 extern const unsigned char fileaccept[];
+
+extern const unsigned char filecancel[];
 
 extern const unsigned char filecopy[];
 
-extern const unsigned char filemove[];
+extern const unsigned char filedelete[];
 
 extern const unsigned char filehidden[];
 
 extern const unsigned char filelink[];
 
-extern const unsigned char filerename[];
+extern const unsigned char filemove[];
 
-extern const unsigned char filedelete[];
+extern const unsigned char filerename[];
 
 extern const unsigned char fileshown[];
 
