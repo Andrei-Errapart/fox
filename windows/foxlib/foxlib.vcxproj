@@ -21,32 +21,32 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{57A223D7-FD28-44A9-BB36-EAEC4399E3FE}</ProjectGuid>
     <RootNamespace>foxlib</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -84,6 +84,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -105,9 +106,10 @@
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
       <ControlFlowGuard>false</ControlFlowGuard>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <CustomBuildStep>
-      <Command>cd $(SolutionDir)..\lib
+      <Command>cd $(ProjectDir)\..\..\lib
 $(OutputPath)reswrap.exe -nc -i  icons.h -n FX -o icons.cpp arrownext.gif arrowprev.gif bigapp.gif bigcdrom.gif bigcomputer.gif bigdesktop.gif bigdoc.gif bigfloppy.gif bigfloppy3.gif bigfloppy5.gif bigfolder.gif bigfolderopen.gif bigharddisk.gif bignetdrive.gif bignethood.gif bookadd.bmp bookclr.gif bookdel.bmp bookset.gif clearentry.gif cmymode.gif deleteicon.gif dialmode.gif dirupicon.gif dockbottom.gif dockflip.gif dockfree.gif dockleft.gif dockright.gif docktop.gif entericon.gif erroricon.gif eyedrop.gif fileaccept.gif filecancel.gif filecopy.gif filedelete.gif filehidden.gif filelink.gif filemove.gif filerename.gif fileshown.gif foldernew.gif gotohome.gif gotowork.gif hsvmode.gif infoicon.gif landscape.gif listmode.gif miniapp.gif minicdrom.gif minicomputer.gif minidesktop.gif minidoc.gif minifloppy.gif minifloppy3.gif minifloppy5.gif minifolder.gif minifolderopen.gif miniharddisk.gif mininetdrive.gif mininethood.gif minizipdrive.gif newfolder.bmp portrait.gif questionicon.gif rgbmode.gif searchicon.gif showbigicons.gif showdetails.gif showsmallicons.gif sorting.bmp undo_gif.gif warningicon.gif winclose.gif winmaximize.gif winminimize.gif winrestore.gif
 $(OutputPath)reswrap.exe -nc -h -n FX -o icons.h arrownext.gif arrowprev.gif bigapp.gif bigcdrom.gif bigcomputer.gif bigdesktop.gif bigdoc.gif bigfloppy.gif bigfloppy3.gif bigfloppy5.gif bigfolder.gif bigfolderopen.gif bigharddisk.gif bignetdrive.gif bignethood.gif bookadd.bmp bookclr.gif bookdel.bmp bookset.gif clearentry.gif cmymode.gif deleteicon.gif dialmode.gif dirupicon.gif dockbottom.gif dockflip.gif dockfree.gif dockleft.gif dockright.gif docktop.gif entericon.gif erroricon.gif eyedrop.gif fileaccept.gif filecancel.gif filecopy.gif filedelete.gif filehidden.gif filelink.gif filemove.gif filerename.gif fileshown.gif foldernew.gif gotohome.gif gotowork.gif hsvmode.gif infoicon.gif landscape.gif listmode.gif miniapp.gif minicdrom.gif minicomputer.gif minidesktop.gif minidoc.gif minifloppy.gif minifloppy3.gif minifloppy5.gif minifolder.gif minifolderopen.gif miniharddisk.gif mininetdrive.gif mininethood.gif minizipdrive.gif newfolder.bmp portrait.gif questionicon.gif rgbmode.gif searchicon.gif showbigicons.gif showdetails.gif showsmallicons.gif sorting.bmp undo_gif.gif warningicon.gif winclose.gif winmaximize.gif winminimize.gif winrestore.gif</Command>
     </CustomBuildStep>
@@ -126,6 +128,7 @@ $(OutputPath)reswrap.exe -nc -h -n FX -o icons.h arrownext.gif arrowprev.gif big
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -152,6 +155,7 @@ $(OutputPath)reswrap.exe -nc -h -n FX -o icons.h arrownext.gif arrowprev.gif big
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
       <ControlFlowGuard>false</ControlFlowGuard>
       <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
